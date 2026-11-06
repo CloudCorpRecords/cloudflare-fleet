@@ -8,4 +8,4 @@ compatibility_date = "2026-09-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "waitlist"
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "232dce11-b975-4797-b892-f22ea1cceddd"

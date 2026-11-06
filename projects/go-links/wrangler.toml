@@ -7,4 +7,4 @@ compatibility_date = "2026-09-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "go-links"
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "0ad67cc8-913a-4228-8de7-9900be1dadd2"

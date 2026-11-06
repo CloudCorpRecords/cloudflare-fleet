@@ -4,9 +4,9 @@ The single tracking table for all Cloudflare work. Update this file in the same 
 
 | # | Project | Type | Bindings | Live URL | Status | Next step |
 |---|---|---|---|---|---|---|
-| 1 | xod-post | Worker | D1 `xod-post` | — | code-ready | `wrangler login` → create D1 → deploy → smoke test → set as Xod's `PUBLIC_DEFAULT_RELAY` |
-| 2 | go-links | Worker | D1 `go-links` | — | code-ready | Deploy → seed `/gh`, `/xod`, `/resume`, `/book` links |
-| 3 | waitlist | Worker | D1 `waitlist` | — | code-ready | Deploy → point Xod + Clipwise landing forms at it |
+| 1 | xod-post | Worker | D1 `xod-post` (`75517640-d526-4377-a06f-74680890e1eb`) | https://xod-post.xod-post.workers.dev | **live** (deployed + smoke-tested 2026-11-06) | Set as Xod's `PUBLIC_DEFAULT_RELAY` in the xod repo (branch `feature/agentmail-live`) |
+| 2 | go-links | Worker | D1 `go-links` (`0ad67cc8-913a-4228-8de7-9900be1dadd2`) + secret `ADMIN_TOKEN` | https://go-links.xod-post.workers.dev | **live** (deployed + smoke-tested 2026-11-06; `/xod` seeded) | Seed `/gh`, `/resume`, `/book` links |
+| 3 | waitlist | Worker | D1 `waitlist` (`232dce11-b975-4797-b892-f22ea1cceddd`) + secret `ADMIN_TOKEN` | https://waitlist.xod-post.workers.dev | **live** (deployed + smoke-tested 2026-11-06) | Point Xod + Clipwise landing forms at it; add Turnstile when a form goes public |
 
 Scope note (Rene, 2026-11-06): fleet-status was cut before launch — just these three projects.
 

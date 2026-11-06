@@ -11,9 +11,9 @@ main = "src/index.js"
 compatibility_date = "2026-09-01"
 
 [vars]
-DOMAIN = "post.example.com"
+DOMAIN = "xod-post.xod-post.workers.dev"
 
 [[d1_databases]]
 binding = "DB"
 database_name = "xod-post"
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "75517640-d526-4377-a06f-74680890e1eb"

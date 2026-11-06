@@ -3,13 +3,13 @@
 **Everything Rene runs on Cloudflare. One repo, one source of truth.**
 
 Account: `b2615ca57289e9ae87e18b1dfe6d7079` · Workers Free (100k requests/day) · Owner: Rene Turcios (CloudCorpRecords)
-Account verified live 2026-11-06: member since Aug 16, 2024, email verified, workers.dev subdomain `xod-post.workers.dev`, zero projects deployed yet — this repo is the start.
+Account verified live 2026-11-06: member since Aug 16, 2024, email verified, workers.dev subdomain `xod-post.workers.dev`. All three projects below deployed and smoke-tested 2026-11-06.
 
 | Project | What it does | Stack | Status |
 |---|---|---|---|
-| [xod-post](projects/xod-post/) | Xod Post Office — the encrypted Agent Mail relay for Xod | Worker + D1 | Code ready, deploy next |
-| [go-links](projects/go-links/) | Personal short links with click counts (`/gh`, `/xod`, `/book`) | Worker + D1 | Ready to deploy |
-| [waitlist](projects/waitlist/) | One form backend for every landing page (Xod, Clipwise, Founders Bay) | Worker + D1 | Ready to deploy |
+| [xod-post](projects/xod-post/) | Xod Post Office — the encrypted Agent Mail relay for Xod | Worker + D1 | **Live:** https://xod-post.xod-post.workers.dev |
+| [go-links](projects/go-links/) | Personal short links with click counts (`/gh`, `/xod`, `/book`) | Worker + D1 | **Live:** https://go-links.xod-post.workers.dev |
+| [waitlist](projects/waitlist/) | One form backend for every landing page (Xod, Clipwise, Founders Bay) | Worker + D1 | **Live:** https://waitlist.xod-post.workers.dev |
 
 Full registry: [PROJECTS.md](PROJECTS.md) · Machine-readable: [projects.json](projects.json)
 Deploy guide: [docs/DEPLOY.md](docs/DEPLOY.md) · What's next: [docs/ROADMAP.md](docs/ROADMAP.md)
