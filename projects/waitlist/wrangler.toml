@@ -1,0 +1,11 @@
+name = "waitlist"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+#   npx wrangler d1 create waitlist   -> paste the printed database_id below
+# Optional: npx wrangler secret put TURNSTILE_SECRET   (enables Turnstile checks)
+# Optional: npx wrangler secret put ADMIN_TOKEN        (enables GET /api/list)
+[[d1_databases]]
+binding = "DB"
+database_name = "waitlist"
+database_id = "00000000-0000-0000-0000-000000000000"

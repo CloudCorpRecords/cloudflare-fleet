@@ -1,0 +1,33 @@
+name: Deploy a Cloudflare project
+
+# Manual only. Pick the project, run it, watch the live URL get verified in PROJECTS.md.
+on:
+  workflow_dispatch:
+    inputs:
+      project:
+        description: Project folder under projects/
+        required: true
+        type: choice
+        options:
+          - xod-post
+          - go-links
+          - waitlist
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        working-directory: projects/${{ inputs.project }}
+        run: npm install
+      - name: Deploy with Wrangler
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: projects/${{ inputs.project }}
+          command: deploy

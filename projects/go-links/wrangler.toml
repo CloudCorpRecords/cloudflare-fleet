@@ -1,0 +1,10 @@
+name = "go-links"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+#   npx wrangler d1 create go-links   -> paste the printed database_id below
+#   npx wrangler secret put ADMIN_TOKEN
+[[d1_databases]]
+binding = "DB"
+database_name = "go-links"
+database_id = "00000000-0000-0000-0000-000000000000"

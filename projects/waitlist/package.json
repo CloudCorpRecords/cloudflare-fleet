@@ -1,0 +1,1 @@
+{"devDependencies":{"wrangler":"^4.40.0"},"license":"MIT","name":"waitlist","private":true,"scripts":{"deploy":"wrangler deploy","dev":"wrangler dev --local"},"type":"module"}
